@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sayuri García | Sayu Lab - Ingeniería & Diseño</title>
+    <title>Sayuri García | Desarrolladora Web WordPress & Marketing Digital</title>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -145,7 +145,7 @@
         }
 
         .hero-section h2 {
-            font-size: 40pt;
+            font-size: 38pt;
             margin: 0 0 15px 0;
             font-weight: 800;
             letter-spacing: -1px;
@@ -155,10 +155,10 @@
 
         .hero-section h2 span {
             display: block;
-            font-size: 15pt;
+            font-size: 14pt;
             color: var(--teal);
             font-weight: 700;
-            margin-top: 8px;
+            margin-top: 10px;
             letter-spacing: 0px;
         }
 
@@ -172,6 +172,7 @@
         .hero-actions {
             display: flex;
             gap: 15px;
+            flex-wrap: wrap;
         }
 
         .btn-outline {
@@ -552,7 +553,6 @@
             box-shadow: var(--shadow-hover);
         }
 
-        /* TARJETAS DE PROYECTOS UNIFORMES CON EFECTO HOVER PANORÁMICO */
         .portfolio-img-box {
             width: 100%;
             height: 230px;
@@ -567,7 +567,7 @@
             height: 100%;
             object-fit: cover;
             object-position: top center;
-            transition: object-position 2s ease; /* Desliza la captura larga suavemente al pasar el cursor */
+            transition: object-position 2s ease;
         }
 
         .portfolio-item:hover .portfolio-img-box img {
@@ -582,13 +582,28 @@
             font-size: 11pt;
             font-weight: 700;
             color: var(--teal-dark);
-            margin-bottom: 4px;
+            margin-bottom: 6px;
+        }
+
+        .portfolio-content .project-tag {
+            font-size: 7.5pt;
+            font-weight: 700;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            display: block;
         }
 
         .portfolio-content p {
             font-size: 8.5pt;
             color: var(--text-muted);
-            margin: 0;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .portfolio-content strong {
+            color: var(--teal-dark);
         }
 
         /* MODAL (VISUALIZADOR DE IMAGEN COMPLETA) */
@@ -740,7 +755,7 @@
     <header>
         <div class="logo-container">
             <h1>SAYURI GARCÍA</h1>
-            <span>Sayu Lab • Ingeniería & Diseño</span>
+            <span>Sayu Lab • WordPress & Marketing Digital</span>
         </div>
         <nav>
             <ul>
@@ -758,11 +773,11 @@
         <!-- HERO PRINCIPAL -->
         <section class="hero-section">
             <div>
-                <h2>SAYURI GARCÍA<span>Ingeniera, Fundadora de Sayu Lab & Marketer</span></h2>
-                <p>Construyo el puente perfecto entre la lógica de la ingeniería en sistemas y el alto impacto estético del diseño y marketing. Como fundadora de Sayu Lab, desarrollo experiencias digitales robustas en WordPress, marcas con identidad propia y estrategias de conversión orientadas a resultados de negocio.</p>
+                <h2>SAYURI GARCÍA<span>Ingeniera en Sistemas | Desarrolladora Web WordPress & Marketing Digital</span></h2>
+                <p>Combino la lógica de la ingeniería computacional con diseño visual de alto impacto y estrategias de conversión. Especializada en la creación de sitios corporativos, e-commerce en WooCommerce, maquetación responsiva UX/UI y gestión de pauta publicitaria en Meta Ads optimizada con Inteligencia Artificial.</p>
                 <div class="hero-actions">
                     <a href="https://wa.me/524421442133" class="nav-btn" target="_blank">Contactar por WhatsApp</a>
-                    <a href="#projects" class="btn-outline">Proyectos</a>
+                    <a href="#projects" class="btn-outline">Ver Caso de Estudio</a>
                 </div>
             </div>
             <div class="hero-photo-wrapper">
@@ -778,7 +793,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-number">30+</div>
-                <div class="stat-label">Proyectos Web & Ads</div>
+                <div class="stat-label">Sitios Web & Campañas</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number">100%</div>
@@ -786,7 +801,7 @@
             </div>
             <div class="stat-card">
                 <div class="stat-number">AI</div>
-                <div class="stat-label">Integración Ágil</div>
+                <div class="stat-label">Automatización Creativa</div>
             </div>
         </div>
 
@@ -796,20 +811,20 @@
                 <h2 class="section-title" style="margin-top:0;">Áreas de Especialidad</h2>
                 <div class="services-stacked">
                     <div class="service-card-clean">
-                        <h3>Desarrollo Web & E-commerce</h3>
-                        <p>Creación de sitios corporativos y tiendas optimizadas en WordPress y WooCommerce.</p>
+                        <h3>Desarrollo Web & E-commerce (WordPress)</h3>
+                        <p>Desarrollo de sitios corporativos, landing pages y tiendas WooCommerce optimizadas para conversión y velocidad (WPO).</p>
                     </div>
                     <div class="service-card-clean">
-                        <h3>Diseño Gráfico & Branding</h3>
-                        <p>Desarrollo de identidad visual, logotipos, empaques y catálogos comerciales.</p>
+                        <h3>Marketing Digital & Meta Ads</h3>
+                        <p>Gestión de pauta pagada, embudos de conversión, configuración de píxel y parrillas de contenido estratégico.</p>
                     </div>
                     <div class="service-card-clean">
-                        <h3>Marketing Digital & Ads</h3>
-                        <p>Gestión de campañas en Meta Ads, embudos de conversión y estrategia digital.</p>
+                        <h3>Maquetación UX/UI & Branding</h3>
+                        <p>Diseño de interfaces intuitivas, identidades de marca, catálogos digitales y activos publicitarios.</p>
                     </div>
                     <div class="service-card-clean">
-                        <h3>Ilustración & UX/UI</h3>
-                        <p>Diseño de interfaces de usuario funcionales y piezas ilustradas a la medida.</p>
+                        <h3>Automatización e Integración de IA</h3>
+                        <p>Optimización de procesos creativos, copys publicitarios y generación de activos visuales mediante Inteligencia Artificial.</p>
                     </div>
                 </div>
             </div>
@@ -818,15 +833,16 @@
                 <h2 class="section-title" style="margin-top:0;">Herramientas & Tech Stack</h2>
                 <div class="tools-tags-container">
                     <span class="tech-badge">WordPress</span>
-                    <span class="tech-badge">Elementor</span>
-                    <span class="tech-badge">Meta Ads</span>
-                    <span class="tech-badge">Google Ads</span>
-                    <span class="tech-badge">PHP / CSS</span>
-                    <span class="tech-badge">Illustrator</span>
-                    <span class="tech-badge">Photoshop</span>
-                    <span class="tech-badge">Canva / IA</span>
                     <span class="tech-badge">WooCommerce</span>
-                    <span class="tech-badge">Figma / UX</span>
+                    <span class="tech-badge">Elementor Pro</span>
+                    <span class="tech-badge">Meta Ads</span>
+                    <span class="tech-badge">HTML5 / CSS3</span>
+                    <span class="tech-badge">PHP (Básico)</span>
+                    <span class="tech-badge">cPanel / Hostinger</span>
+                    <span class="tech-badge">Canva Pro</span>
+                    <span class="tech-badge">Photoshop / Illustrator</span>
+                    <span class="tech-badge">IA Generativa</span>
+                    <span class="tech-badge">Figma (UX/UI)</span>
                 </div>
             </div>
         </div>
@@ -839,11 +855,11 @@
                     <div>
                         <div class="year-badge">2023 - Presente</div>
                         <h3>Sayu Lab</h3>
-                        <div class="subtitle-role">Fundadora, Diseñadora & Marketer</div>
+                        <div class="subtitle-role">Fundadora & Webmaster / Marketer</div>
                         <ul>
-                            <li>Liderazgo y dirección de proyectos propios en web y WooCommerce.</li>
-                            <li>Creación de identidad visual corporativa, branding y empaques.</li>
-                            <li>Gestión integral de pauta en Meta Ads para marcas.</li>
+                            <li>Desarrollo de tiendas e-commerce y landing pages en WordPress orientadas a conversión.</li>
+                            <li>Ejecución de estrategias de Meta Ads para marcas como Éxodo Sport y Don José.</li>
+                            <li>Automatización de procesos visuales e integración de herramientas de IA Generativa.</li>
                         </ul>
                     </div>
                 </div>
@@ -851,12 +867,12 @@
                 <div class="trajectory-card">
                     <div>
                         <div class="year-badge">2021 - 2024</div>
-                        <h3>Agencias Digitales</h3>
-                        <div class="subtitle-role">Proyectos Especializados</div>
+                        <h3>Agencias & Consultorías</h3>
+                        <div class="subtitle-role">Desarrolladora Web & Content Marketer</div>
                         <ul>
-                            <li>Desarrollo web UX/UI y maquetación centrada en conversión.</li>
-                            <li>Diseño de material publicitario y estrategias para agencias (ASSTRIM, AURA).</li>
-                            <li>Optimización de flujos creativos con Inteligencia Artificial.</li>
+                            <li>ASSTRIM & Tres60: Maquetación web UX/UI para sitios corporativos y tiendas virtuales.</li>
+                            <li>Digiter & AURA: Pauta publicitaria en Meta Ads y estrategia de contenido multiplataforma.</li>
+                            <li>D'Charros Pizza: Creación de contenido visual y posicionamiento digital gastronómico.</li>
                         </ul>
                     </div>
                 </div>
@@ -864,11 +880,12 @@
                 <div class="trajectory-card">
                     <div>
                         <div class="year-badge">2019 - 2022</div>
-                        <h3>Consultoría & Tecnología</h3>
-                        <div class="subtitle-role">Soporte & E-commerce</div>
+                        <h3>Santander CCS & SP Telecom</h3>
+                        <div class="subtitle-role">Soporte Técnico & Gestión de Datos</div>
                         <ul>
-                            <li>Soporte técnico especializado de software en Santander CCS y SP Telecom.</li>
-                            <li>Desarrollo de tiendas virtuales y material publicitario en Tres60.</li>
+                            <li>Soporte técnico de infraestructura y atención a usuarios.</li>
+                            <li>Digitalización y administración de bases de datos operativas.</li>
+                            <li>Tres60 Consultoría: Desarrollo e-commerce con blog corporativo integrado.</li>
                         </ul>
                     </div>
                 </div>
@@ -881,36 +898,35 @@
             <div class="process-grid">
                 <div class="process-card">
                     <div class="process-num">01</div>
-                    <h5>Análisis</h5>
-                    <p>Evaluación técnica de requerimientos y objetivos de negocio.</p>
+                    <h5>Análisis & UX</h5>
+                    <p>Evaluación técnica de requerimientos y definición de arquitectura de información.</p>
                 </div>
                 <div class="process-card">
                     <div class="process-num">02</div>
                     <h5>Estrategia</h5>
-                    <p>Planificación de arquitectura web e identidad visual.</p>
+                    <p>Planificación de identidad visual, embudos de venta e integración de herramientas.</p>
                 </div>
                 <div class="process-card">
                     <div class="process-num">03</div>
-                    <h5>Ejecución</h5>
-                    <p>Desarrollo a la medida, maquetación UX/UI y producción creativa.</p>
+                    <h5>Maquetación</h5>
+                    <p>Desarrollo en WordPress, optimización para móviles y producción visual.</p>
                 </div>
                 <div class="process-card">
                     <div class="process-num">04</div>
                     <h5>Optimización</h5>
-                    <p>Lanzamiento, pruebas y mejora continua orientada a ROI.</p>
+                    <p>Lanzamiento, pruebas de conversión (WPO) y campañas en Meta Ads.</p>
                 </div>
             </div>
         </div>
 
         <!-- PORTAFOLIO DE PROYECTOS -->
         <div id="projects">
-            <h2 class="section-title center">Portafolio de Proyectos</h2>
+            <h2 class="section-title center">Casos de Estudio & Proyectos</h2>
             <ul class="filter-menu">
                 <li><button class="filter-btn active" onclick="filterProjects('all')">Todos</button></li>
-                <li><button class="filter-btn" onclick="filterProjects('web')">Páginas Web</button></li>
-                <li><button class="filter-btn" onclick="filterProjects('design')">Diseño Gráfico</button></li>
+                <li><button class="filter-btn" onclick="filterProjects('web')">Desarrollo Web</button></li>
+                <li><button class="filter-btn" onclick="filterProjects('design')">Diseño & Branding</button></li>
                 <li><button class="filter-btn" onclick="filterProjects('ads')">Marketing & Ads</button></li>
-                <li><button class="filter-btn" onclick="filterProjects('illustration')">Ilustración</button></li>
             </ul>
 
             <div class="portfolio-grid">
@@ -919,53 +935,70 @@
                         <img src="proyecto1.png" alt="Exodo Sport">
                     </div>
                     <div class="portfolio-content">
-                        <h3>Exodo Sport (E-commerce)</h3>
-                        <p>Tienda virtual optimizada con pasarelas de pago y diseño UX.</p>
+                        <span class="project-tag">WordPress + WooCommerce</span>
+                        <h3>Éxodo Sport (E-commerce)</h3>
+                        <p><strong>El Reto:</strong> Crear una tienda en línea ágil para comercialización de artículos deportivos.</p>
+                        <p><strong>Solución:</strong> Maquetación responsiva en WordPress, pasarelas de pago integradas y diseño enfocado en la usabilidad.</p>
                     </div>
                 </div>
+
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal('proyecto2.png')">
                         <img src="proyecto2.png" alt="Hydroequipos">
                     </div>
                     <div class="portfolio-content">
-                        <h3>Hydroequipos (Corporativo)</h3>
-                        <p>Sitio web institucional de alta velocidad y estructura limpia.</p>
+                        <span class="project-tag">Sitio Web Corporativo</span>
+                        <h3>Hydroequipos Industriales</h3>
+                        <p><strong>El Reto:</strong> Proyectar autoridad técnica y estructurar un catálogo de servicios complejo.</p>
+                        <p><strong>Solución:</strong> Desarrollo en WordPress con arquitectura limpia, alta velocidad de carga y formularios de cotización directa.</p>
                     </div>
                 </div>
+
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal('proyecto3.png')">
                         <img src="proyecto3.png" alt="Tres60">
                     </div>
                     <div class="portfolio-content">
+                        <span class="project-tag">WordPress + Blog UX</span>
                         <h3>Tres60 Consultoría</h3>
-                        <p>Desarrollo web y blog corporativo integrado.</p>
+                        <p><strong>El Reto:</strong> Integrar la venta de servicios con un módulo de blog para estrategia SEO.</p>
+                        <p><strong>Solución:</strong> Maquetación intuitiva con jerarquía visual accesible y diseño enfocado en captación de leads.</p>
                     </div>
                 </div>
+
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-img-box" onclick="openModal('diseno1.png')">
                         <img src="diseno1.png" alt="Don José">
                     </div>
                     <div class="portfolio-content">
-                        <h3>Don José / Identidad & Empaques</h3>
-                        <p>Desarrollo integral de marca y diseño de empaques comerciales.</p>
+                        <span class="project-tag">Branding & Packaging</span>
+                        <h3>Don José / El Tío José</h3>
+                        <p><strong>El Reto:</strong> Construir la identidad gráfica desde cero para comercialización de producto local.</p>
+                        <p><strong>Solución:</strong> Creación de logotipo, paleta de colores corporativa y diseño de empaques comerciales listos para anaquel.</p>
                     </div>
                 </div>
+
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-img-box" onclick="openModal('diseno3.png')">
                         <img src="diseno3.png" alt="Branding">
                     </div>
                     <div class="portfolio-content">
-                        <h3>Branding & Catálogos</h3>
-                        <p>Diseño editorial corporativo y catálogos comerciales de alto impacto.</p>
+                        <span class="project-tag">Diseño Editorial & Catálogos</span>
+                        <h3>Branding & Piezas Comerciales</h3>
+                        <p><strong>El Reto:</strong> Presentar portafolios de productos de forma visualmente atractiva para equipos de ventas.</p>
+                        <p><strong>Solución:</strong> Layouts editoriales limpios diseñados en Illustrator/Canva para formato digital e impreso.</p>
                     </div>
                 </div>
+
                 <div class="portfolio-item" data-category="ads">
                     <div class="portfolio-img-box" onclick="openModal('diseno2.png')">
                         <img src="diseno2.png" alt="Meta Ads">
                     </div>
                     <div class="portfolio-content">
-                        <h3>Creativos para Meta Ads</h3>
-                        <p>Diseño publicitario optimizado para conversión y rendimiento en pauta.</p>
+                        <span class="project-tag">Meta Ads & Performance</span>
+                        <h3>Campañas Publicitarias Pagadas</h3>
+                        <p><strong>El Reto:</strong> Generar flujo constante de clientes potenciales en redes sociales.</p>
+                        <p><strong>Solución:</strong> Diseño de anuncios orientados a conversión, copys persuasivos y embudos dirigidos a WhatsApp/Landing Page.</p>
                     </div>
                 </div>
             </div>
@@ -973,9 +1006,9 @@
 
         <!-- BANNER DE CONTACTO -->
         <div class="cta-banner">
-            <h2>¿Tienes un proyecto en mente o una vacante ideal?</h2>
-            <p>Hablemos sobre cómo mi perfil híbrido en ingeniería, diseño y marketing puede aportar valor a tus metas.</p>
-            <a href="https://wa.me/524421442133" class="nav-btn" target="_blank" style="padding: 14px 32px; font-size: 9pt; background: #FFFFFF; color: var(--teal-dark) !important;">Escríbeme por WhatsApp</a>
+            <h2>¿Listo para impulsar tu proyecto o vacante?</h2>
+            <p>Hablemos sobre cómo mi perfil técnico en ingeniería, desarrollo WordPress y marketing digital puede sumar valor a tu equipo.</p>
+            <a href="https://wa.me/524421442133" class="nav-btn" target="_blank" style="padding: 14px 32px; font-size: 9pt; background: #FFFFFF; color: var(--teal-dark) !important;">Contactar por WhatsApp</a>
         </div>
 
     </div>

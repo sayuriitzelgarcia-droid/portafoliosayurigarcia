@@ -26,11 +26,15 @@
             box-sizing: border-box;
         }
 
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: var(--bg-base);
             color: var(--text-main);
-            overflow-x: hidden;
             position: relative;
             line-height: 1.7;
         }
@@ -51,7 +55,7 @@
             z-index: 1;
         }
 
-        /* MENÚ FLOTANTE RESPONSIVO */
+        /* MENÚ FLOTANTE */
         header {
             display: flex;
             justify-content: space-between;
@@ -126,7 +130,7 @@
             transform: translateY(-2px);
         }
 
-        /* BOTÓN HAMBURGUESA (MÓVIL) */
+        /* BOTÓN HAMBURGUESA */
         .menu-toggle {
             display: none;
             flex-direction: column;
@@ -135,6 +139,7 @@
             background: none;
             border: none;
             padding: 5px;
+            z-index: 1100;
         }
 
         .menu-toggle span {
@@ -631,11 +636,11 @@
             backdrop-filter: blur(10px);
             justify-content: center;
             align-items: center;
-            padding: 40px;
+            padding: 20px;
         }
 
         .modal img {
-            max-width: 90%;
+            max-width: 95%;
             max-height: 85vh;
             border-radius: 10px;
             box-shadow: 0 20px 50px rgba(0,0,0,0.5);
@@ -645,13 +650,13 @@
 
         .modal-close {
             position: absolute;
-            top: 30px;
-            right: 40px;
+            top: 20px;
+            right: 20px;
             color: #FFFFFF;
             font-size: 24pt;
             font-weight: 800;
             cursor: pointer;
-            background: rgba(13, 148, 136, 0.4);
+            background: rgba(13, 148, 136, 0.6);
             width: 45px;
             height: 45px;
             display: flex;
@@ -665,15 +670,17 @@
             background: var(--teal);
         }
 
-        /* BANNER DE CONTACTO REPARADO PARA MÓVIL */
+        /* BANNER DE CONTACTO REPARADO */
         .cta-banner {
             background: linear-gradient(135deg, var(--teal-dark), var(--teal));
             color: #FFFFFF;
             border-radius: 16px;
-            padding: 45px 25px;
+            padding: 40px 20px;
             text-align: center;
             box-shadow: 0 20px 40px rgba(4, 47, 46, 0.25);
             margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .cta-banner h2 {
@@ -681,7 +688,7 @@
             font-weight: 800;
             margin-bottom: 12px;
             color: #FFFFFF;
-            line-height: 1.2;
+            line-height: 1.3;
         }
 
         .cta-banner p {
@@ -694,15 +701,16 @@
         }
 
         .cta-btn-fix {
-            display: inline-block;
-            max-width: 100%;
-            padding: 14px 24px !important;
-            font-size: 8.5pt !important;
+            display: inline-block !important;
+            max-width: 100% !important;
+            padding: 12px 20px !important;
+            font-size: 8pt !important;
             background: #FFFFFF !important;
             color: var(--teal-dark) !important;
             white-space: normal !important;
-            word-wrap: break-word;
-            line-height: 1.4;
+            word-wrap: break-word !important;
+            line-height: 1.4 !important;
+            box-sizing: border-box !important;
         }
 
         footer {
@@ -750,11 +758,12 @@
             color: var(--text-muted);
         }
 
-        /* REGLAS RESPONSIVAS PARA CELULAR */
+        /* MEDIA QUERIES PARA CELULAR */
         @media (max-width: 900px) {
             header {
                 padding: 14px 20px;
                 margin: 15px 15px 0;
+                position: relative;
             }
 
             .menu-toggle {
@@ -772,12 +781,12 @@
                 border-radius: 12px;
                 padding: 20px;
                 margin-top: 10px;
-                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.15);
                 display: none;
             }
 
             nav.active {
-                display: block;
+                display: block !important;
             }
 
             nav ul {
@@ -797,7 +806,7 @@
             }
 
             .hero-section h2 {
-                font-size: 26pt;
+                font-size: 24pt;
             }
 
             .hero-actions {
@@ -884,22 +893,22 @@
         <img id="modalImg" src="" alt="Vista Previa">
     </div>
 
-    <!-- MENÚ CON BOTÓN HAMBURGUESA MÓVIL -->
+    <!-- MENÚ ENCABEZADO -->
     <header>
         <div class="logo-container">
             <h1>SAYURI GARCÍA</h1>
             <span>Sayu Lab • WordPress & Marketing Digital</span>
         </div>
-        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir Menú">
+        <button class="menu-toggle" id="menuBtn" aria-label="Abrir Menú">
             <span></span>
             <span></span>
             <span></span>
         </button>
         <nav id="nav-menu">
             <ul>
-                <li><a href="#skills" onclick="toggleMenu()">Especialidad</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Trayectoria</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Especialidad</a></li>
+                <li><a href="#experience" class="nav-link">Trayectoria</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
                 <li style="margin-top: 10px;">
                     <a href="https://wa.me/524421442133" class="nav-btn" target="_blank" style="width: 100%;">Hablemos por WhatsApp</a>
                 </li>
@@ -1173,6 +1182,7 @@
     </footer>
 
     <script>
+        // ONDAS FLUIDAS
         const canvas = document.getElementById('tech-canvas');
         const ctx = canvas.getContext('2d');
 
@@ -1217,13 +1227,33 @@
 
         drawWaves();
 
-        function toggleMenu() {
-            const nav = document.getElementById('nav-menu');
-            if (window.innerWidth <= 900) {
-                nav.classList.toggle('active');
-            }
-        }
+        // CONTROL DEL MENÚ HAMBURGUESA
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menuBtn');
+            const navMenu = document.getElementById('nav-menu');
+            const navLinks = document.querySelectorAll('.nav-link');
 
+            if (menuBtn && navMenu) {
+                menuBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    navMenu.classList.toggle('active');
+                });
+
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                    });
+                });
+
+                document.addEventListener('click', (e) => {
+                    if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+            }
+        });
+
+        // FILTRO DE PROYECTOS
         function filterProjects(category, evt) {
             const items = document.querySelectorAll('.portfolio-item');
             const buttons = document.querySelectorAll('.filter-btn');
@@ -1242,6 +1272,7 @@
             });
         }
 
+        // MODAL DE IMÁGENES
         function openModal(imgSrc) {
             const modal = document.getElementById('imageModal');
             const modalImg = document.getElementById('modalImg');

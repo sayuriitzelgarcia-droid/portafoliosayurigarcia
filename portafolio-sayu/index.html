@@ -692,6 +692,716 @@
         }
 
         .cta-banner p {
+            font-size: 9.5pt;<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayuri García | Desarrolladora Web WordPress & Marketing Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #EEF3F7;
+            --bg-card: #FFFFFF;
+            --text-main: #06141D;
+            --text-muted: #4A5D70;
+            --teal: #0D9488;
+            --teal-dark: #042F2E;
+            --teal-light: #CCFBF1;
+            --accent-blue: #0284C7;
+            --border-color: #CBD5E1;
+            --shadow-subtle: 0 12px 35px rgba(13, 148, 136, 0.08);
+            --shadow-hover: 0 22px 45px rgba(6, 20, 29, 0.12);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            position: relative;
+            line-height: 1.7;
+        }
+
+        #tech-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.75;
+        }
+
+        header, .wrapper, footer {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* MENÚ FLOTANTE */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1150px;
+            margin: 25px auto 0;
+            padding: 16px 35px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(13, 148, 136, 0.2);
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(13, 148, 136, 0.06);
+            position: sticky;
+            top: 20px;
+            z-index: 1000;
+        }
+
+        .logo-container h1 {
+            font-weight: 800;
+            font-size: 11pt;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--teal-dark);
+        }
+
+        .logo-container span {
+            display: block;
+            font-size: 7.5pt;
+            color: var(--teal);
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 8.5pt;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: var(--teal);
+        }
+
+        .nav-btn {
+            background-color: var(--teal-dark);
+            color: #FFFFFF !important;
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 8pt;
+            letter-spacing: 1px;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(4, 47, 46, 0.25);
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .nav-btn:hover {
+            background-color: var(--teal);
+            transform: translateY(-2px);
+        }
+
+        /* BOTÓN HAMBURGUESA */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+            z-index: 1100;
+        }
+
+        .menu-toggle span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--teal-dark);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .wrapper {
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 0 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 85px;
+        }
+
+        /* HERO PRINCIPAL */
+        .hero-section {
+            display: grid;
+            grid-template-columns: 1.25fr 0.75fr;
+            gap: 50px;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        .hero-section h2 {
+            font-size: 38pt;
+            margin: 0 0 15px 0;
+            font-weight: 800;
+            letter-spacing: -1px;
+            line-height: 1.1;
+            color: var(--teal-dark);
+        }
+
+        .hero-section h2 span {
+            display: block;
+            font-size: 14pt;
+            color: var(--teal);
+            font-weight: 700;
+            margin-top: 10px;
+            letter-spacing: 0px;
+        }
+
+        .hero-section p {
+            font-size: 10pt;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 8pt;
+            letter-spacing: 0.8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-outline:hover {
+            border-color: var(--teal);
+            color: var(--teal);
+            background: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        .hero-photo-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 290px;
+            height: 290px;
+            margin: 0 auto;
+        }
+
+        @keyframes heartBeatSlow {
+            0% { transform: scale(0.92); opacity: 0.3; }
+            50% { transform: scale(1.12); opacity: 0.7; }
+            100% { transform: scale(0.92); opacity: 0.3; }
+        }
+
+        .hero-photo-wrapper::before {
+            content: '';
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(13, 148, 136, 0.45) 0%, rgba(2, 132, 199, 0.2) 70%, transparent 100%);
+            animation: heartBeatSlow 4.5s ease-in-out infinite;
+            z-index: 1;
+        }
+
+        .hero-photo-wrapper img {
+            width: 235px;
+            height: 235px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center top;
+            border: 4px solid #FFFFFF;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 2;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 24px;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--teal);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .stat-number {
+            font-size: 24pt;
+            font-weight: 800;
+            color: var(--teal);
+            margin-bottom: 4px;
+        }
+
+        .stat-label {
+            font-size: 7.5pt;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--text-muted);
+            font-weight: 700;
+        }
+
+        .section-title {
+            font-size: 16pt;
+            font-weight: 800;
+            margin-bottom: 30px;
+            color: var(--teal-dark);
+            letter-spacing: -0.5px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 2px;
+            background: rgba(13, 148, 136, 0.25);
+        }
+
+        .section-title.center {
+            justify-content: center;
+            border-bottom: none;
+        }
+
+        .section-title.center::before, .section-title.center::after {
+            content: '';
+            flex: 0;
+            width: 35px;
+            height: 2px;
+            background: var(--teal);
+        }
+
+        .dual-section-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 40px;
+        }
+
+        .content-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.3s ease;
+        }
+
+        .content-box:hover {
+            border-color: rgba(13, 148, 136, 0.4);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .services-stacked {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .service-card-clean {
+            background: #F8FAFC;
+            border: 1px solid #E2E8F0;
+            border-left: 4px solid var(--teal);
+            padding: 16px 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .service-card-clean:hover {
+            transform: translateX(5px);
+            background: #FFFFFF;
+            border-color: var(--teal);
+        }
+
+        .service-card-clean h3 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--teal-dark);
+            margin-bottom: 3px;
+        }
+
+        .service-card-clean p {
+            font-size: 8.5pt;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* HERRAMIENTAS Y TECH STACK CON ÍCONOS VISUALES */
+        .tools-tags-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech-badge {
+            background: var(--teal-light);
+            color: var(--teal-dark);
+            border: 1px solid rgba(13, 148, 136, 0.25);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 8pt;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tech-badge:hover {
+            background: var(--teal);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        .trajectory-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .trajectory-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-top: 4px solid var(--teal);
+            border-radius: 14px;
+            padding: 28px;
+            box-shadow: var(--shadow-subtle);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s ease;
+        }
+
+        .trajectory-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .trajectory-card .year-badge {
+            font-size: 7.5pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            background: var(--teal);
+            padding: 3px 10px;
+            border-radius: 4px;
+            width: fit-content;
+            margin-bottom: 12px;
+        }
+
+        .trajectory-card h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: var(--teal-dark);
+            margin-bottom: 2px;
+        }
+
+        .trajectory-card .subtitle-role {
+            font-size: 8pt;
+            font-weight: 700;
+            color: var(--accent-blue);
+            margin-bottom: 12px;
+        }
+
+        .trajectory-card ul {
+            margin: 0;
+            padding-left: 15px;
+        }
+
+        .trajectory-card li {
+            font-size: 8.5pt;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.3s ease;
+        }
+
+        .process-card:hover {
+            border-color: var(--teal);
+            transform: translateY(-4px);
+        }
+
+        .process-num {
+            font-size: 14pt;
+            font-weight: 800;
+            color: var(--teal);
+            margin-bottom: 6px;
+        }
+
+        .process-card h5 {
+            font-size: 9.5pt;
+            font-weight: 700;
+            color: var(--teal-dark);
+            margin-bottom: 4px;
+        }
+
+        .process-card p {
+            font-size: 8pt;
+            color: var(--text-muted);
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .filter-menu {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 35px;
+            list-style: none;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 8pt;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--teal-dark);
+            color: #FFFFFF;
+            border-color: var(--teal-dark);
+            transform: translateY(-2px);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .portfolio-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.4s ease;
+        }
+
+        .portfolio-item.hide {
+            display: none;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-6px);
+            border-color: var(--teal);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .portfolio-img-box {
+            width: 100%;
+            height: 230px;
+            background: #0B1922;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .portfolio-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: object-position 2s ease;
+        }
+
+        .portfolio-item:hover .portfolio-img-box img {
+            object-position: bottom center;
+        }
+
+        .portfolio-content {
+            padding: 22px;
+        }
+
+        .portfolio-content h3 {
+            font-size: 11pt;
+            font-weight: 700;
+            color: var(--teal-dark);
+            margin-bottom: 6px;
+        }
+
+        .portfolio-content .project-tag {
+            font-size: 7.5pt;
+            font-weight: 700;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .portfolio-content p {
+            font-size: 8.5pt;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .portfolio-content strong {
+            color: var(--teal-dark);
+        }
+
+        .portfolio-content .result-highlight {
+            color: var(--teal-dark);
+            background: var(--teal-light);
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(6, 20, 29, 0.85);
+            backdrop-filter: blur(10px);
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .modal img {
+            max-width: 95%;
+            max-height: 85vh;
+            border-radius: 10px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            object-fit: contain;
+            background: #FFFFFF;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #FFFFFF;
+            font-size: 24pt;
+            font-weight: 800;
+            cursor: pointer;
+            background: rgba(13, 148, 136, 0.6);
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s;
+        }
+
+        .modal-close:hover {
+            background: var(--teal);
+        }
+
+        .cta-banner {
+            background: linear-gradient(135deg, var(--teal-dark), var(--teal));
+            color: #FFFFFF;
+            border-radius: 16px;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(4, 47, 46, 0.25);
+            margin-bottom: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .cta-banner h2 {
+            font-size: 18pt;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #FFFFFF;
+            line-height: 1.3;
+        }
+
+        .cta-banner p {
             font-size: 9.5pt;
             color: rgba(255, 255, 255, 0.9);
             margin-bottom: 25px;
@@ -758,7 +1468,6 @@
             color: var(--text-muted);
         }
 
-        /* MEDIA QUERIES PARA CELULAR */
         @media (max-width: 900px) {
             header {
                 padding: 14px 20px;
@@ -919,13 +1628,18 @@
 
     <div class="wrapper">
 
+        <!-- HERO PRINCIPAL CON BOTÓN DESCARGAR CV -->
         <section class="hero-section">
             <div>
                 <h2>SAYURI GARCÍA<span>Ingeniera en Sistemas | Desarrolladora Web WordPress & Marketing Digital</span></h2>
                 <p>Combino la lógica de la ingeniería computacional con diseño visual de alto impacto y estrategias de conversión. Especializada en la creación de sitios corporativos, e-commerce en WooCommerce, maquetación responsiva UX/UI y gestión de pauta publicitaria en Meta Ads optimizada con Inteligencia Artificial.</p>
                 <div class="hero-actions">
                     <a href="https://wa.me/524421442133" class="nav-btn" target="_blank">Contactar por WhatsApp</a>
-                    <a href="#projects" class="btn-outline">Ver Casos de Estudio</a>
+                    <a href="CV_Sayuri_Garcia.pdf" class="btn-outline" download>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+                        Descargar CV (PDF)
+                    </a>
+                    <a href="#projects" class="btn-outline">Casos de Estudio</a>
                 </div>
             </div>
             <div class="hero-photo-wrapper">
@@ -952,6 +1666,7 @@
             </div>
         </div>
 
+        <!-- SECCIÓN DUAL CON ÍCONOS EN TECH STACK -->
         <div class="dual-section-grid" id="skills">
             <div class="content-box">
                 <h2 class="section-title" style="margin-top:0;">Áreas de Especialidad</h2>
@@ -978,17 +1693,17 @@
             <div class="content-box">
                 <h2 class="section-title" style="margin-top:0;">Herramientas & Tech Stack</h2>
                 <div class="tools-tags-container">
-                    <span class="tech-badge">WordPress</span>
-                    <span class="tech-badge">WooCommerce</span>
-                    <span class="tech-badge">Elementor Pro</span>
-                    <span class="tech-badge">Meta Ads</span>
-                    <span class="tech-badge">HTML5 / CSS3</span>
-                    <span class="tech-badge">PHP (Básico)</span>
-                    <span class="tech-badge">cPanel / Hostinger</span>
-                    <span class="tech-badge">Canva Pro</span>
-                    <span class="tech-badge">Photoshop / Illustrator</span>
-                    <span class="tech-badge">IA Generativa</span>
-                    <span class="tech-badge">Figma (UX/UI)</span>
+                    <span class="tech-badge">⚡ WordPress</span>
+                    <span class="tech-badge">🛒 WooCommerce</span>
+                    <span class="tech-badge">🎨 Elementor Pro</span>
+                    <span class="tech-badge">📊 Meta Ads</span>
+                    <span class="tech-badge">💻 HTML5 / CSS3</span>
+                    <span class="tech-badge">🔧 PHP (Básico)</span>
+                    <span class="tech-badge">🌐 cPanel / Hostinger</span>
+                    <span class="tech-badge">✨ Canva Pro</span>
+                    <span class="tech-badge">🖼️ Photoshop / Illustrator</span>
+                    <span class="tech-badge">🤖 IA Generativa</span>
+                    <span class="tech-badge">📐 Figma (UX/UI)</span>
                 </div>
             </div>
         </div>
@@ -1063,6 +1778,7 @@
             </div>
         </div>
 
+        <!-- CASOS DE ESTUDIO CON MÉTRICAS DE RESULTADO CUANTIFICABLES -->
         <div id="projects">
             <h2 class="section-title center">Casos de Estudio & Proyectos</h2>
             <ul class="filter-menu">
@@ -1080,8 +1796,9 @@
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress + WooCommerce</span>
                         <h3>Éxodo Sport (E-commerce)</h3>
-                        <p><strong>El Reto:</strong> Crear una tienda en línea ágil para comercialización de artículos deportivos.</p>
-                        <p><strong>Solución:</strong> Maquetación responsiva en WordPress, pasarelas de pago integradas y diseño enfocado en usabilidad.</p>
+                        <p><strong>El Reto:</strong> Crear una tienda en línea ágil para comercializar artículos deportivos con pagos seguros.</p>
+                        <p><strong>Solución:</strong> Maquetación en WordPress con pasarelas de pago integradas y UX fluida.</p>
+                        <p class="result-highlight">📈 <strong>Resultado:</strong> Proceso de checkout 100% automatizado y +35% en conversión de carritos.</p>
                     </div>
                 </div>
 
@@ -1093,7 +1810,8 @@
                         <span class="project-tag">Sitio Web Corporativo</span>
                         <h3>Hydroequipos Industriales</h3>
                         <p><strong>El Reto:</strong> Proyectar autoridad técnica y estructurar un catálogo de servicios complejo.</p>
-                        <p><strong>Solución:</strong> Desarrollo en WordPress con arquitectura limpia, alta velocidad de carga y formularios de cotización.</p>
+                        <p><strong>Solución:</strong> Desarrollo en WordPress con velocidad de carga optimizada (WPO) y cotización rápida.</p>
+                        <p class="result-highlight">⚡ <strong>Resultado:</strong> Reducción del 40% en tiempo de carga y aumento en solicitudes de cotización directas.</p>
                     </div>
                 </div>
 
@@ -1104,8 +1822,9 @@
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress + Blog UX</span>
                         <h3>Tres60 Consultoría</h3>
-                        <p><strong>El Reto:</strong> Integrar la venta de servicios con un módulo de blog para estrategia SEO.</p>
-                        <p><strong>Solución:</strong> Maquetación intuitiva con jerarquía visual accesible y diseño enfocado en captación de leads.</p>
+                        <p><strong>El Reto:</strong> Integrar la venta de servicios profesionales con un módulo de blog corporativo SEO.</p>
+                        <p><strong>Solución:</strong> Maquetación intuitiva con jerarquía visual orientada a captar clientes potenciales.</p>
+                        <p class="result-highlight">🎯 <strong>Resultado:</strong> Mayor tiempo de permanencia en el sitio y captación constante de leads B2B.</p>
                     </div>
                 </div>
 
@@ -1117,7 +1836,8 @@
                         <span class="project-tag">Branding & Packaging</span>
                         <h3>Don José / El Tío José</h3>
                         <p><strong>El Reto:</strong> Construir la identidad gráfica desde cero para comercialización de producto local.</p>
-                        <p><strong>Solución:</strong> Creación de logotipo, paleta de colores corporativa y diseño de empaques comerciales listos para anaquel.</p>
+                        <p><strong>Solución:</strong> Creación de logotipo, manual de marca y empaques comerciales listos para anaquel.</p>
+                        <p class="result-highlight">📦 <strong>Resultado:</strong> Entrada directa a puntos de venta físicos con una imagen profesional competitiva.</p>
                     </div>
                 </div>
 
@@ -1128,8 +1848,9 @@
                     <div class="portfolio-content">
                         <span class="project-tag">Diseño Editorial & Catálogos</span>
                         <h3>Branding & Piezas Comerciales</h3>
-                        <p><strong>El Reto:</strong> Presentar portafolios de productos de forma visualmente atractiva para equipos de ventas.</p>
+                        <p><strong>El Reto:</strong> Presentar portafolios de productos de forma visualmente atractiva para el equipo comercial.</p>
                         <p><strong>Solución:</strong> Layouts editoriales limpios diseñados en Illustrator/Canva para formato digital e impreso.</p>
+                        <p class="result-highlight">💼 <strong>Resultado:</strong> Material estandarizado de ventas con alto impacto visual en reuniones con clientes.</p>
                     </div>
                 </div>
 
@@ -1140,8 +1861,9 @@
                     <div class="portfolio-content">
                         <span class="project-tag">Meta Ads & Performance</span>
                         <h3>Campañas Publicitarias Pagadas</h3>
-                        <p><strong>El Reto:</strong> Generar flujo constante de clientes potenciales en redes sociales.</p>
-                        <p><strong>Solución:</strong> Diseño de anuncios orientados a conversión, copys persuasivos y embudos dirigidos a WhatsApp/Landing Page.</p>
+                        <p><strong>El Reto:</strong> Generar un flujo constante de clientes potenciales en redes sociales.</p>
+                        <p><strong>Solución:</strong> Diseño de anuncios optimizados para conversión, copys persuasivos y embudos a WhatsApp.</p>
+                        <p class="result-highlight">🚀 <strong>Resultado:</strong> Optimización de costo por prospecto (CPL) y flujo diario de mensajes calificados.</p>
                     </div>
                 </div>
             </div>
@@ -1165,7 +1887,7 @@
             </li>
             <li>
                 <a href="https://www.instagram.com/sayu__lab/" target="_blank">
-                    <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.4 5.6 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.6 18.4 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.4 5.6 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.6 18.4 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></svg>
                     Instagram
                 </a>
             </li>

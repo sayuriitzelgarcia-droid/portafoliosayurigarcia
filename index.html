@@ -119,7 +119,7 @@
         .portfolio-item.hide { display: none; }
         .portfolio-item:hover { transform: translateY(-6px); border-color: var(--teal); box-shadow: var(--shadow-hover); }
 
-        /* CONTENEDOR DE IMAGEN CON INDICADOR DE CLIC (UX) */
+        /* CONTENEDOR DE IMAGEN CON SCROLL FLUIDO */
         .portfolio-img-box {
             width: 100%;
             height: 230px;
@@ -134,47 +134,35 @@
             height: 100%;
             object-fit: cover;
             object-position: top center;
-            transition: transform 0.4s ease;
+            transition: object-position 2.5s ease;
         }
 
-        /* Overlay oscuro al pasar el cursor */
-        .portfolio-img-box::after {
-            content: '🔍 Ampliar imagen';
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(4, 47, 46, 0.75);
-            color: #FFFFFF;
-            font-size: 8.5pt;
-            font-weight: 800;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            backdrop-filter: blur(2px);
-            z-index: 2;
+        /* EFECTO SCROLL AL PASAR EL CURSOR */
+        .portfolio-item:hover .portfolio-img-box img {
+            object-position: bottom center;
         }
 
-        .portfolio-img-box:hover::after { opacity: 1; }
-        .portfolio-img-box:hover img { transform: scale(1.05); }
-
-        /* Badge visible permanente */
-        .badge-click {
+        /* LUPA DISCRETA EN LA ESQUINA */
+        .badge-zoom {
             position: absolute;
             bottom: 10px;
             right: 10px;
-            background: rgba(6, 20, 29, 0.88);
+            background: rgba(4, 47, 46, 0.85);
             color: #CCFBF1;
-            font-size: 7pt;
+            font-size: 7.5pt;
             font-weight: 700;
-            padding: 4px 10px;
+            padding: 5px 10px;
             border-radius: 6px;
             letter-spacing: 0.5px;
-            z-index: 3;
+            z-index: 5;
             pointer-events: none;
             border: 1px solid rgba(13, 148, 136, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .portfolio-img-box:hover .badge-zoom {
+            background: var(--teal);
+            color: #FFFFFF;
         }
 
         .portfolio-content { padding: 22px; }
@@ -255,7 +243,7 @@
 
     <canvas id="tech-canvas"></canvas>
 
-    <!-- MODAL DE IMÁGENES -->
+    <!-- MODAL DE IMÁGENES CON FLECHAS -->
     <div id="imageModal" class="modal">
         <div class="modal-container">
             <span class="modal-close" onclick="closeModal()">&times;</span>
@@ -438,7 +426,7 @@
             </div>
         </div>
 
-        <!-- CASOS DE ESTUDIO CON OVERLAY E INDICADORES DE CLIC -->
+        <!-- CASOS DE ESTUDIO -->
         <div id="projects">
             <h2 class="section-title center">Casos de Estudio & Proyectos</h2>
             <ul class="filter-menu">
@@ -454,7 +442,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['proyecto1.png'])">
                         <img src="proyecto1.png" alt="Exodo Sport">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress + WooCommerce</span>
@@ -469,7 +456,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['artefactos.png'])">
                         <img src="artefactos.png" alt="Artefactos Industriales">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress B2B • Sector Industrial</span>
@@ -484,7 +470,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['darvad.png'])">
                         <img src="darvad.png" alt="Grupo Darvad México">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress • Transporte & Logística</span>
@@ -499,7 +484,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['obinsa.png'])">
                         <img src="obinsa.png" alt="Obinsa Grupo Constructor">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress B2B • Obra Civil & Minería</span>
@@ -514,7 +498,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['supply.png'])">
                         <img src="supply.png" alt="Supply Malv Master">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress B2B • Insumos Industriales</span>
@@ -529,7 +512,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['volverati.png'])">
                         <img src="volverati.png" alt="Volver a Ti">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress UX/UI • Marca Personal</span>
@@ -544,7 +526,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['cerdel.png'])">
                         <img src="cerdel.png" alt="Cerdel Constructora">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress • Real Estate & Arquitectura</span>
@@ -559,7 +540,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['proyecto2.png'])">
                         <img src="proyecto2.png" alt="Hydroequipos">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">Sitio Web Corporativo</span>
@@ -574,7 +554,6 @@
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-img-box" onclick="openModal(['proyecto3.png'])">
                         <img src="proyecto3.png" alt="Tres60">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">WordPress + Blog UX</span>
@@ -589,7 +568,7 @@
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-img-box" onclick="openModal(['diseno1.png', 'diseno3.png', 'diseno2.png'])">
                         <img src="diseno1.png" alt="Don José Branding">
-                        <span class="badge-click">🔍 Carrusel (3 fotos)</span>
+                        <span class="badge-zoom">🔍 Ver imágenes</span>
                     </div>
                     <div class="portfolio-content">
                         <span class="project-tag">Branding Completo & Identidad</span>
@@ -604,11 +583,11 @@
                 <div class="portfolio-item" data-category="design">
                     <div class="portfolio-img-box" onclick="openModal(['diseno3.png', 'diseno1.png'])">
                         <img src="diseno3.png" alt="Plantillas Redes Sociales">
-                        <span class="badge-click">🔍 Carrusel (2 fotos)</span>
+                        <span class="badge-zoom">🔍 Ver imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Plantillas & Piezas Editoriales</span>
-                        <h3>Kits Visuales & Catálogos</h3>
+                        <span class="project-tag">Kits Visuales & Catálogos</span>
+                        <h3>Plantillas & Piezas Editoriales</h3>
                         <p><strong>El Reto:</strong> Diseñar piezas de alto impacto visual para difusión digital y presentaciones corporativas.</p>
                         <p><strong>Solución:</strong> Maquetación de catálogos multipágina y plantillas editables para agilizar publicaciones.</p>
                         <p class="result-highlight">✨ <strong>Resultado:</strong> Estandarización de marca y reducción del 50% en tiempos de diseño.</p>
@@ -619,11 +598,11 @@
                 <div class="portfolio-item" data-category="ads">
                     <div class="portfolio-img-box" onclick="openModal(['diseno2.png'])">
                         <img src="diseno2.png" alt="Meta Ads Conversion">
-                        <span class="badge-click">🔍 Clic para ampliar</span>
+                        <span class="badge-zoom">🔍 Ver imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Meta Ads & Performance</span>
-                        <h3>Campañas de Ventas & Leads</h3>
+                        <span class="project-tag">Campañas de Ventas & Leads</span>
+                        <h3>Meta Ads & Performance</h3>
                         <p><strong>El Reto:</strong> Atraer clientes potenciales calificados y aumentar conversiones en canales digitales.</p>
                         <p><strong>Solución:</strong> Creativos publicitarios optimizados, copys con IA y embudos de prospección a WhatsApp.</p>
                         <p class="result-highlight">🚀 <strong>Resultado:</strong> Optimización de CPL y flujo sostenido de mensajes de cotización.</p>

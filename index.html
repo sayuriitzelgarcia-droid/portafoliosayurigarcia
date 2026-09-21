@@ -119,7 +119,6 @@
         .portfolio-item.hide { display: none; }
         .portfolio-item:hover { transform: translateY(-6px); border-color: var(--teal); box-shadow: var(--shadow-hover); }
 
-        /* CONTENEDOR DE IMAGEN CON SCROLL FLUIDO */
         .portfolio-img-box {
             width: 100%;
             height: 230px;
@@ -137,12 +136,10 @@
             transition: object-position 2.5s ease;
         }
 
-        /* EFECTO SCROLL AL PASAR EL CURSOR EN SITIOS WEB */
         .portfolio-item:hover .portfolio-img-box img {
             object-position: bottom center;
         }
 
-        /* LUPA DISCRETA EN LA ESQUINA PARA DISEÑO/MARKETING */
         .badge-zoom {
             position: absolute;
             bottom: 10px;
@@ -172,7 +169,6 @@
         .portfolio-content strong { color: var(--teal-dark); }
         .portfolio-content .result-highlight { color: var(--teal-dark); background: var(--teal-light); padding: 4px 8px; border-radius: 4px; display: inline-block; margin-top: 4px; font-weight: 600; }
 
-        /* MODAL CON CARRUSEL INTERACTIVO */
         .modal {
             display: none; position: fixed; z-index: 2000; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(6, 20, 29, 0.88); backdrop-filter: blur(10px); justify-content: center; align-items: center; padding: 20px;
@@ -366,7 +362,7 @@
                         <div class="subtitle-role">Fundadora & Webmaster / Marketer</div>
                         <ul>
                             <li>Desarrollo de tiendas e-commerce y landing pages en WordPress orientadas a conversión.</li>
-                            <li>Ejecución de estrategias de Meta Ads para marcas como Éxodo Sport y Don José.</li>
+                            <li>Ejecución de estrategias de Meta Ads para marcas corporativas y locales.</li>
                             <li>Automatización de procesos visuales e integración de herramientas de IA Generativa.</li>
                         </ul>
                     </div>
@@ -566,106 +562,316 @@
 
                 <!-- 10. EL TÍO JOSÉ -->
                 <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-img-box" onclick="openModal(['./diseno1.png', './diseno3.png', './diseno2.png'])">
-                        <img src="./diseno1.png" alt="Don José Branding">
-                        <span class="badge-zoom">🔍 Ver imágenes</span>
+                    <div class="portfolio-img-box" onclick="openModal(['./1.png', './2.png', './3.png', './4_2.png', './5_2.png'])">
+                        <img src="./1.png" alt="El Tío José Branding & Marketing">
+                        <span class="badge-zoom">🔍 Ver 5 imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Branding Completo & Identidad</span>
-                        <h3>El Tío José (Identidad & Menú)</h3>
-                        <p><strong>El Reto:</strong> Desarrollar la identidad gráfica completa, empaques y menús para marca gastronómica.</p>
-                        <p><strong>Solución:</strong> Logotipo, paleta de colores, maquetación de menús impresos y kit para redes sociales.</p>
-                        <p class="result-highlight">🎨 <strong>Resultado:</strong> Identidad de marca sólida y presencia unificada en canal físico y digital.</p>
+                        <span class="project-tag">Branding • Menú • Social Media • Meta Ads</span>
+                        <h3>El Tío José (Identidad, Menú & Performance)</h3>
+                        <p><strong>El Reto:</strong> Desarrollar la identidad gráfica integral para marca gastronómica, diseñar herramientas de venta y activar campañas de pedidos a domicilio.</p>
+                        <p><strong>Solución:</strong> Imagotipo artesanal, empaques, maquetación de menú editorial, parrilla de contenidos para redes sociales y pauta en Meta Ads a WhatsApp.</p>
+                        <p class="result-highlight">🚀 <strong>Resultado:</strong> Marca unificada, optimización a $8.67 por chat y flujo constante de pedidos.</p>
                     </div>
                 </div>
 
-                <!-- 11. ASSTRIM BRANDING & ADS -->
+                <!-- 11. ASSTRIM -->
                 <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-img-box" onclick="openModal(['./4.png', './5.png'])">
-                        <img src="./4.png" alt="Asstrim Soluciones Provisorias">
+                    <div class="portfolio-img-box" onclick="openModal(['./6_2.png', './7_2.png', './8_2.png'])">
+                        <img src="./6_2.png" alt="ASSTRIM Branding & Social Media">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding • Papelería • Social Media</span>
+                        <h3>ASSTRIM (Branding, Papelería & Ads)</h3>
+                        <p><strong>El Reto:</strong> Crear la identidad institucional para un despacho de gestoría profesional y estructurar su presencia en medios digitales e impresos.</p>
+                        <p><strong>Solución:</strong> Imagotipo corporativo, aplicaciones en papelería (tarjetas y carpetas), banners institucionales, posts y creativos publicitarios.</p>
+                        <p class="result-highlight">🏢 <strong>Resultado:</strong> Identidad corporativa sólida, profesionalización del despacho y captación ágil de clientes.</p>
+                    </div>
+                </div>
+
+                <!-- 12. D'CHARROS PIZZA -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./9_2.png', './10_2.png', './11_2.png', './12.png', './13.png'])">
+                        <img src="./9_2.png" alt="D Charros Pizza Branding & Menú">
+                        <span class="badge-zoom">🔍 Ver 5 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding • Menú QR • Social Media</span>
+                        <h3>D'Charros Pizza (Identidad & Material Comercial)</h3>
+                        <p><strong>El Reto:</strong> Renovar la identidad visual de la marca, digitalizar su carta para consumo en mesa y unificar su publicidad.</p>
+                        <p><strong>Solución:</strong> Vectorización de logo, menús físicos y QR, señalética para local, lonas impresas, flyers y posts orgánicos.</p>
+                        <p class="result-highlight">🍕 <strong>Resultado:</strong> Experiencia de cliente modernizada en punto de venta y digitalización de menú.</p>
+                    </div>
+                </div>
+
+                <!-- 13. AGUA GUAPURITA -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./14.png', './15.png', './16.png'])">
+                        <img src="./14.png" alt="Agua Guapurita Branding">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding • Packaging • Identidad</span>
+                        <h3>Agua Guapurita (Identidad & Empaque)</h3>
+                        <p><strong>El Reto:</strong> Diseñar la marca para una purificadora de agua comercial enfocada en pureza, frescura y confianza.</p>
+                        <p><strong>Solución:</strong> Imagotipo estilizado, manual de marca, diseño de etiquetas para botellas, sellos para garrafones y señalética.</p>
+                        <p class="result-highlight">💧 <strong>Resultado:</strong> Posicionamiento de marca fresca y presentación profesional para retail.</p>
+                    </div>
+                </div>
+
+                <!-- 14. POLLERÍA CASTILLO -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./17.png', './18.png', './19.png'])">
+                        <img src="./17.png" alt="Distribuidora de Pollo Castillo Branding">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding • Packaging • Papelería</span>
+                        <h3>Pollería Castillo (Identidad & Packaging)</h3>
+                        <p><strong>El Reto:</strong> Desarrollar la identidad gráfica para una distribuidora alimentaria enfocada en calidez y calidad.</p>
+                        <p><strong>Solución:</strong> Logotipo emblemático, manual de uso de color, diseño de empaques, tarjetas de presentación y letreros.</p>
+                        <p class="result-highlight">🍗 <strong>Resultado:</strong> Alta visibilidad en punto de venta y profesionalización de marca.</p>
+                    </div>
+                </div>
+
+                <!-- 15. SOESA -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./20.png', './21.png', './22.png'])">
+                        <img src="./20.png" alt="SOESA Branding Industrial">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding Industrial • Logo 3D</span>
+                        <h3>SOESA (Branding & Identidad Industrial)</h3>
+                        <p><strong>El Reto:</strong> Desarrollar la marca para un taller de soldadura que requería transmitir precisión técnica y solidez B2B.</p>
+                        <p><strong>Solución:</strong> Logotipo vectorial y versión 3D metálica, tarjetas de presentación, letreros y variaciones de color.</p>
+                        <p class="result-highlight">⚙️ <strong>Resultado:</strong> Identidad corporativa robusta orientada a prospección de contratos industriales.</p>
+                    </div>
+                </div>
+
+                <!-- 16. DULCE PECADO -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./23.png', './24.png'])">
+                        <img src="./23.png" alt="Dulce Pecado Branding">
                         <span class="badge-zoom">🔍 Ver 2 imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Branding & Redes Sociales</span>
-                        <h3>Asstrim (Soluciones Provisorias)</h3>
-                        <p><strong>El Reto:</strong> Proyectar una identidad sólida de despacho profesional y diseñar piezas publicitarias de alto impacto.</p>
-                        <p><strong>Solución:</strong> Creación del imagotipo corporativo, manual de marca y línea gráfica unificada para banners digitales.</p>
-                        <p class="result-highlight">🏢 <strong>Resultado:</strong> Comunicación institucional clara y estandarización visual en captación de prospectos.</p>
+                        <span class="project-tag">Branding • Identidad Gastronómica</span>
+                        <h3>Dulce Pecado (Sweet & Salty)</h3>
+                        <p><strong>El Reto:</strong> Crear la identidad de marca para un proyecto de repostería y snacks que proyecte calidez y sofisticación.</p>
+                        <p><strong>Solución:</strong> Logotipo tipográfico, desarrollo de isotipo con iniciales (DP) y paleta de colores para empaques y redes.</p>
+                        <p class="result-highlight">🍰 <strong>Resultado:</strong> Identidad dulce, versátil y lista para comercialización de productos.</p>
                     </div>
                 </div>
 
-                <!-- 12. AGUA GUAPURITA -->
+                <!-- 17. AESI -->
                 <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-img-box" onclick="openModal(['./6.png', './7.png'])">
-                        <img src="./6.png" alt="Agua Guapurita">
+                    <div class="portfolio-img-box" onclick="openModal(['./25.png', './26.png'])">
+                        <img src="./25.png" alt="AESI Suministros Industriales">
                         <span class="badge-zoom">🔍 Ver 2 imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Branding & Embalaje</span>
-                        <h3>Agua Guapurita (Fluya Contigo)</h3>
-                        <p><strong>El Reto:</strong> Diseñar la identidad gráfica para una purificadora de agua comercial enfocada en pureza y confianza.</p>
-                        <p><strong>Solución:</strong> Logotipo fluido, paleta cromática en tonos azules e integración en botellas, garrafones y viniles.</p>
-                        <p class="result-highlight">💧 <strong>Resultado:</strong> Posicionamiento de marca fresca y presentación profesional lista para retail.</p>
+                        <span class="project-tag">Branding Industrial • Identidad</span>
+                        <h3>AESI (Suministros Industriales)</h3>
+                        <p><strong>El Reto:</strong> Crear la identidad visual para un proveedor de refacciones e insumos industriales B2B.</p>
+                        <p><strong>Solución:</strong> Imagotipo dinámico, manual de uso de color, variaciones en fondos oscuros y papelería técnica.</p>
+                        <p class="result-highlight">⚙️ <strong>Resultado:</strong> Identidad técnica, solidez de marca y presencia profesional B2B.</p>
                     </div>
                 </div>
 
-                <!-- 13. POLLERÍA CASTILLO -->
+                <!-- 18. TRÁMITES Y ASESORÍAS LIZ -->
                 <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-img-box" onclick="openModal(['./8.png', './9.png'])">
-                        <img src="./8.png" alt="Distribuidora Pollo Castillo">
+                    <div class="portfolio-img-box" onclick="openModal(['./27.png', './28.png', './29.png'])">
+                        <img src="./27.png" alt="Trámites y Asesorías Liz Branding">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding • Papelería • Informativo</span>
+                        <h3>Trámites y Asesorías Liz</h3>
+                        <p><strong>El Reto:</strong> Crear una identidad corporativa limpia y confiable para una consultoría de trámites y gestoría personal.</p>
+                        <p><strong>Solución:</strong> Logotipo institucional, tarjetas de presentación, flyers de servicios estructurados y posts informativos.</p>
+                        <p class="result-highlight">📄 <strong>Resultado:</strong> Comunicación profesional clara y estandarización de canal de ventas.</p>
+                    </div>
+                </div>
+
+                <!-- 19. HOMEGARDEN (USA) -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./30.png', './31.png', './32.png', './33.png'])">
+                        <img src="./30.png" alt="HomeGarden Sprinklers USA">
+                        <span class="badge-zoom">🔍 Ver 4 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding • Campaign USA • Social Media</span>
+                        <h3>HomeGarden (Irrigation Systems - Texas, USA)</h3>
+                        <p><strong>El Reto:</strong> Crear la identidad de marca y anuncios publicitarios para empresa de jardinería y sistemas de riego en Texas.</p>
+                        <p><strong>Solución:</strong> Imagotipo ecológico, variaciones de marca, parrilla de contenidos en inglés y campaña de llamadas directas.</p>
+                        <p class="result-highlight">🌿 <strong>Resultado:</strong> Presencia visual para el mercado estadounidense y captación de leads.</p>
+                    </div>
+                </div>
+
+                <!-- 20. CHEESY BOOM -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./34.png', './35.png'])">
+                        <img src="./34.png" alt="Cheesy Boom Banderillas Coreanas">
                         <span class="badge-zoom">🔍 Ver 2 imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Branding Gastronómico</span>
-                        <h3>Distribuidora de Pollo Castillo</h3>
-                        <p><strong>El Reto:</strong> Crear la imagen corporativa para un negocio de distribución alimentaria que transmitiera calidez y calidad.</p>
-                        <p><strong>Solución:</strong> Logotipo emblemático con rayos solares, aplicable en marquesinas, letreros, empaques y papelería.</p>
-                        <p class="result-highlight">🍗 <strong>Resultado:</strong> Alta visibilidad en punto de venta y diferenciación clara en su sector comercial.</p>
+                        <span class="project-tag">Branding Gastronómico • Menú</span>
+                        <h3>Cheesy Boom (Banderillas Coreanas)</h3>
+                        <p><strong>El Reto:</strong> Crear la identidad de marca y menú para un concepto de comida rápida asiática juvenil y divertida.</p>
+                        <p><strong>Solución:</strong> Logotipo e ilustración con efecto neón, estructuración de menú por pasos y creativos para inauguración.</p>
+                        <p class="result-highlight">🍢 <strong>Resultado:</strong> Identidad gastronómica vibrante y canal de pedidos simplificado.</p>
                     </div>
                 </div>
 
-                <!-- 14. SOESA SOLDADURA -->
+                <!-- 21. NUTRIÓLOGA YULS -->
                 <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-img-box" onclick="openModal(['./10.png', './11.png'])">
-                        <img src="./10.png" alt="SOESA Servicios de Soldadura">
+                    <div class="portfolio-img-box" onclick="openModal(['./36.png', './37.png', './38.png'])">
+                        <img src="./36.png" alt="Nutrióloga Yuls Branding">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding Médico • Papelería</span>
+                        <h3>Nutrióloga Yuls (Materno Infantil)</h3>
+                        <p><strong>El Reto:</strong> Diseñar la identidad de marca cálida y humana para una consulta de nutrición especialización infantil y clínica.</p>
+                        <p><strong>Solución:</strong> Isotipo lineal orgánico, paleta en tonos coral, tarjetas de presentación y flyer informativo de servicios.</p>
+                        <p class="result-highlight">👶 <strong>Resultado:</strong> Identidad empática de alta confianza que impulsa la atracción de pacientes.</p>
+                    </div>
+                </div>
+
+                <!-- 22. DIGITER -->
+                <div class="portfolio-item" data-category="design">
+                    <div class="portfolio-img-box" onclick="openModal(['./63.png', './64.png'])">
+                        <img src="./63.png" alt="Digiter Agencia de Marketing">
                         <span class="badge-zoom">🔍 Ver 2 imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Branding Industrial</span>
-                        <h3>SOESA (Servicios de Soldadura)</h3>
-                        <p><strong>El Reto:</strong> Desarrollar la identidad de marca de un taller industrial que requiere proyectar firmeza y precisión.</p>
-                        <p><strong>Solución:</strong> Logotipo metálico/industrial con símbolo de flama estilizada, tarjetas de presentación y letreros.</p>
-                        <p class="result-highlight">⚙️ <strong>Resultado:</strong> Imagen corporativa robusta orientada a captar contratos B2B e industriales.</p>
+                        <span class="project-tag">Branding de Agencia • Social Media</span>
+                        <h3>Digiter (Publicidad & Marketing Digital)</h3>
+                        <p><strong>El Reto:</strong> Crear material comercial y creativos B2B para posicionar los servicios de una agencia de marketing digital.</p>
+                        <p><strong>Solución:</strong> Imagotipo corporativo, diseño de planes de redes sociales, promociones de temporada y estructuración de servicios web.</p>
+                        <p class="result-highlight">🚀 <strong>Resultado:</strong> Identidad corporativa sólida y oferta comercial altamente persuasiva.</p>
                     </div>
                 </div>
 
-                <!-- 15. PLANTILLAS & EDITORIAL -->
-                <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-img-box" onclick="openModal(['./diseno3.png', './diseno1.png'])">
-                        <img src="./diseno3.png" alt="Plantillas Redes Sociales">
-                        <span class="badge-zoom">🔍 Ver imágenes</span>
-                    </div>
-                    <div class="portfolio-content">
-                        <span class="project-tag">Kits Visuales & Catálogos</span>
-                        <h3>Plantillas & Piezas Editoriales</h3>
-                        <p><strong>El Reto:</strong> Diseñar piezas de alto impacto visual para difusión digital y presentaciones corporativas.</p>
-                        <p><strong>Solución:</strong> Maquetación de catálogos multipágina y plantillas editables para agilizar publicaciones.</p>
-                        <p class="result-highlight">✨ <strong>Resultado:</strong> Estandarización de marca y reducción del 50% en tiempos de diseño.</p>
-                    </div>
-                </div>
-
-                <!-- 16. MARKETING & META ADS -->
+                <!-- 23. VITADERMIS -->
                 <div class="portfolio-item" data-category="ads">
-                    <div class="portfolio-img-box" onclick="openModal(['./diseno2.png'])">
-                        <img src="./diseno2.png" alt="Meta Ads Conversion">
-                        <span class="badge-zoom">🔍 Ver imágenes</span>
+                    <div class="portfolio-img-box" onclick="openModal(['./39.png', './40.png', './41.png', './42.png', './43.png'])">
+                        <img src="./39.png" alt="Vitadermis Content Management">
+                        <span class="badge-zoom">🔍 Ver 5 imágenes</span>
                     </div>
                     <div class="portfolio-content">
-                        <span class="project-tag">Campañas de Ventas & Leads</span>
-                        <h3>Meta Ads & Performance</h3>
-                        <p><strong>El Reto:</strong> Atraer clientes potenciales calificados y aumentar conversiones en canales digitales.</p>
-                        <p><strong>Solución:</strong> Creativos publicitarios optimizados, copys con IA y embudos de prospección a WhatsApp.</p>
-                        <p class="result-highlight">🚀 <strong>Resultado:</strong> Optimización de CPL y flujo sostenido de mensajes de cotización.</p>
+                        <span class="project-tag">Content Management • Social Media</span>
+                        <h3>Vitadermis (Estrategia de Contenido & Performance)</h3>
+                        <p><strong>El Reto:</strong> Gestionar el contenido digital y campañas comerciales para clínica de dermatología y estética (colaboración con Digiter).</p>
+                        <p><strong>Solución:</strong> Banners promocionales, campañas de temporada, gift cards, creativos educativos (Mitos vs Realidades) y pauta.</p>
+                        <p class="result-highlight">💆‍♀️ <strong>Resultado:</strong> Comunicación estética de alto valor y aceleración en agendamiento de citas.</p>
+                    </div>
+                </div>
+
+                <!-- 24. GRÚAS CORREGIDORA -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-img-box" onclick="openModal(['./44.png', './45.png', './46.png', './47.png', './48.png', './49.png'])">
+                        <img src="./44.png" alt="Grúas Corregidora Content Management">
+                        <span class="badge-zoom">🔍 Ver 6 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Content Management • Social Media</span>
+                        <h3>Grúas Corregidora (Estrategia de Contenido)</h3>
+                        <p><strong>El Reto:</strong> Crear contenido ágil y de alto impacto para servicios de auxilio vial 24/7 (colaboración con Digiter).</p>
+                        <p><strong>Solución:</strong> Creativos de respuesta rápida, posts interactivos, campañas de reclutamiento y servicios locales.</p>
+                        <p class="result-highlight">🚚 <strong>Resultado:</strong> Alta conversión de llamadas directas y presencia de marca en carretera.</p>
+                    </div>
+                </div>
+
+                <!-- 25. RAÍZ SOLAR -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-img-box" onclick="openModal(['./50.png', './51.png', './72.png'])">
+                        <img src="./50.png" alt="Raíz Solar Content Management">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Content Management • Social Media</span>
+                        <h3>Raíz Solar (Estrategia de Contenido)</h3>
+                        <p><strong>El Reto:</strong> Desarrollar contenido visual atractivo para línea de tisanas, deshidratados y sazonadores (colaboración con Digiter).</p>
+                        <p><strong>Solución:</strong> Fotomontajes de producto, desglose informativo de ingredientes, kits de regalo y campañas de temporada.</p>
+                        <p class="result-highlight">🌿 <strong>Resultado:</strong> Imagen de marca artesanal de alto valor y dinamismo en ventas de kits.</p>
+                    </div>
+                </div>
+
+                <!-- 26. GALORE BOUTIQUE -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-img-box" onclick="openModal(['./52.png', './53.png', './54.png'])">
+                        <img src="./52.png" alt="Galore Boutique Content Management">
+                        <span class="badge-zoom">🔍 Ver 3 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Content Management • Social Media</span>
+                        <h3>Galore Boutique (E-commerce Tech)</h3>
+                        <p><strong>El Reto:</strong> Crear contenido dinámico y fichas técnicas para tienda en línea de smartwatches y accesorios (colaboración con Digiter).</p>
+                        <p><strong>Solución:</strong> Carruseles de producto, infografías de beneficios, testimonios de clientes y promociones con envío gratis.</p>
+                        <p class="result-highlight">⌚ <strong>Resultado:</strong> Comunicación visual clara de especificaciones tech que impulsa las ventas.</p>
+                    </div>
+                </div>
+
+                <!-- 27. INEX QRO -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-img-box" onclick="openModal(['./55.png', './56.png', './57.png', './58.png'])">
+                        <img src="./55.png" alt="Inex Qro Content Management">
+                        <span class="badge-zoom">🔍 Ver 4 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Content Management • Social Media</span>
+                        <h3>Inex Qro (Climatización & Equipos)</h3>
+                        <p><strong>El Reto:</strong> Crear anuncios de alta conversión para venta e instalación de minisplits y sistemas de aire acondicionado (colaboración con Digiter).</p>
+                        <p><strong>Solución:</strong> Fichas de precios y características, promociones estacionales, conectividad Wi-Fi y respaldo técnico certificado.</p>
+                        <p class="result-highlight">❄️ <strong>Resultado:</strong> Claridad comercial en equipos de climatización y aumento en solicitudes de cotización.</p>
+                    </div>
+                </div>
+
+                <!-- 28. MGS CLIMATIZACIÓN -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-img-box" onclick="openModal(['./59.png', './60.png'])">
+                        <img src="./59.png" alt="MGS Climatización Content Management">
+                        <span class="badge-zoom">🔍 Ver 2 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Content Management • Social Media</span>
+                        <h3>MGS Climatización (Equipos & Cursos)</h3>
+                        <p><strong>El Reto:</strong> Diseñar la estrategia visual para comercialización de aires acondicionados y promoción de cursos técnicos (colaboración con Digiter).</p>
+                        <p><strong>Solución:</strong> Fichas de producto Inverter R32, llamadas a la acción comerciales y creativos para atracción de estudiantes de instalación.</p>
+                        <p class="result-highlight">❄️ <strong>Resultado:</strong> Estrategia integral que conecta la venta de equipos con la formación profesional.</p>
+                    </div>
+                </div>
+
+                <!-- 29. IBIMED -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-img-box" onclick="openModal(['./61.png', './62.png'])">
+                        <img src="./61.png" alt="Ibimed Content Management">
+                        <span class="badge-zoom">🔍 Ver 2 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Content Management • Social Media</span>
+                        <h3>Ibimed (Uniformes & Ropa Médica)</h3>
+                        <p><strong>El Reto:</strong> Diseñar contenido publicitario para uniformes médicos destacando confort y tecnología textil (colaboración con Digiter).</p>
+                        <p><strong>Solución:</strong> Posts comerciales resaltando atributos de durabilidad, tecnología antifluidos y facilidad de lavado para profesionales.</p>
+                        <p class="result-highlight">🩺 <strong>Resultado:</strong> Comunicación visual atractiva enfocada en las necesidades del personal de salud.</p>
+                    </div>
+                </div>
+
+                <!-- 30. ÉXODO SPORT (CAMPAÑAS & CATÁLOGOS) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-img-box" onclick="openModal(['./65.jpg', './66.jpg', './67.jpg', './68.jpg', './69.jpg', './70.jpg', './71.png'])">
+                        <img src="./65.jpg" alt="Exodo Sport Uniformes y Ads">
+                        <span class="badge-zoom">🔍 Ver 7 imágenes</span>
+                    </div>
+                    <div class="portfolio-content">
+                        <span class="project-tag">Branding • Catálogos • Meta Ads</span>
+                        <h3>Éxodo Sport (Uniformes & Campañas)</h3>
+                        <p><strong>El Reto:</strong> Diseñar catálogos de uniformes escolares y ejecutar campañas de pauta digital para la temporada de regreso a clases.</p>
+                        <p><strong>Solución:</strong> Creación de paquetes institucionales (COBAQ), flyers de promoción, tarjetas bancarias y pauta optimizada en Meta Ads.</p>
+                        <p class="result-highlight">🎒 <strong>Resultado:</strong> Campañas de alto rendimiento con cientos de conversaciones de clientes y alta conversión en ventas.</p>
                     </div>
                 </div>
 
